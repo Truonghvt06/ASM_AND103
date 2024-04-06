@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="#D9D9D9"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/bo_edit"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="10dp"
+                >
+                <ImageView
+                    android:id="@+id/img_anh_sp_gioHang"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#03A9F4"
+                    android:scaleType="centerCrop" />
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giá ok"
+                android:background="@color/white"
+                android:paddingLeft="10dp"
+                android:textColor="#F44336"
+                android:textStyle="bold"
+                android:paddingRight="10dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/tv_giasp_giohang"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên sản phẩm"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:id="@+id/tv_tensp_gioHang"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thể loại"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:id="@+id/tv_theloai_gioHang"
+                />
+
+            <TextView
+                android:id="@+id/tv_soluongsp_giohang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="so luong"
+                android:textColor="#050505" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MUA NGAY"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:background="@drawable/bo_button"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/tv_mua_giohang"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="XÓA"
+                    android:textStyle="bold"
+                    android:background="@drawable/bo_edit"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/tv_xoa_giohang"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

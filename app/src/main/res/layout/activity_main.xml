@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:cardCornerRadius="50dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="15dp"
+        android:elevation="5dp"
+        android:translationZ="20dp"
+        >
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/menu_nav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:itemIconTint="@color/color_bottom_navi"
+            app:itemTextColor="@color/color_bottom_navi"
+            android:backgroundTint="@color/white"
+            app:menu="@menu/menu_btn_navi" />
+        <!--    app:labelVisibilityMode="labeled"-->
+        <!--    android:layout_marginBottom="-2dp"-->
+        <!--    app:itemBackground="@color/white"-->
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

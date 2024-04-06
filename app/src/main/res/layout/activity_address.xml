@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.Address">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:gravity="center_vertical"
+       android:padding="10dp"
+       >
+
+       <ImageView
+           android:id="@+id/img_back"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/back"
+           android:layout_marginRight="10dp"
+           />
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Complete your profile"
+           android:textStyle="bold"
+           android:textColor="@color/black"
+           android:textSize="20sp"
+           />
+   </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Complete your profile"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/img_avatar"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/star"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="50dp"
+        />
+
+    <EditText
+        android:id="@+id/ed_full_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fullname"
+        android:padding="13dp"
+        android:background="@drawable/bo_edit"
+        android:layout_marginHorizontal="20dp"/>
+    <EditText
+        android:id="@+id/ed_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:layout_marginVertical="10dp"
+        android:padding="13dp"
+        android:background="@drawable/bo_edit"
+        android:layout_marginHorizontal="20dp"/>
+    <EditText
+        android:id="@+id/ed_ngay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="DD/MM/YY"
+        android:padding="13dp"
+        android:background="@drawable/bo_edit"
+        android:layout_marginHorizontal="20dp"/>
+    <EditText
+        android:id="@+id/ed_sdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone number"
+        android:padding="13dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/bo_edit"
+        android:layout_marginHorizontal="20dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@null"
+        android:background="@drawable/bo_button"
+        android:text="Complete your profile"
+        android:textSize="20sp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        />
+</LinearLayout>
